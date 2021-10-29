@@ -4,8 +4,9 @@ class locators {
         this.Mobiles='//div[text()="Mobiles"]';
         this.Electronics='//span[text()="Electronics"]';
         this.MobileCompany='//a[@title="OPPO"]';
-        this.PhoneRange='//h2[text()="Oppo Mobiles under ₹10K"]/parent::div/following-sibling::div/a';
+        this.PhonePriceRange='//h2[text()="Oppo Mobiles under ₹10K"]/parent::div/following-sibling::div/a';
         this.PhoneModel='//div[text()="OPPO A12 (Black, 32 GB)"]';
+        this.productLabel='//h1[contains(.,"OPPO A12 (Black, 32 GB)")]';
         this.AddToCart='//button[contains(.,"ADD TO CART")]';
         this.MyCart='//div[contains(text(),"My Cart")]';
         this.Home='a:nth-child(1) > img';
