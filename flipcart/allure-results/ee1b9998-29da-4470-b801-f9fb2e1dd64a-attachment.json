@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//h1[contains(.,\"OPPO A12 (Black, 32 GB)\")]"
+}

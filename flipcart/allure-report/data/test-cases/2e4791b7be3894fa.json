@@ -1,0 +1,82 @@
+{
+  "uid" : "2e4791b7be3894fa",
+  "name" : "",
+  "fullName" : "The Internet Guinea Pig Website: As a user, I can log into the secure area.",
+  "historyId" : "c1c98ddae1f8ceeeeba24299ca4345c2",
+  "time" : {
+    "start" : 1635545354259,
+    "stop" : 1635545354260,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "The Internet Guinea Pig Website: As a user, I can log into the secure area"
+  }, {
+    "name" : "testClass",
+    "value" : "The Internet Guinea Pig Website: As a user, I can log into the secure area"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "The Internet Guinea Pig Website: As a user, I can log into the secure area"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.54"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7dfabcc198c15570",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635545294225,
+        "stop" : 1635545294227,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c442e9207c1845c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635545258369,
+        "stop" : 1635545258370,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9d7fd53f8c5abb4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635545256682,
+        "stop" : 1635545256684,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2e4791b7be3894fa.json",
+  "parameterValues" : [ "chrome-95.0.4638.54" ]
+}

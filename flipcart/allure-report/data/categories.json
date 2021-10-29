@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Error: function timed out, ensure the promise resolves within 60000 milliseconds",
+      "children" : [ {
+        "name" : "Given I am on the login page",
+        "uid" : "93a28fa55fd65251",
+        "parentUid" : "e639a9ad30ef63977eb12890cdf17798",
+        "status" : "broken",
+        "time" : {
+          "start" : 1635545294227,
+          "stop" : 1635545354258,
+          "duration" : 60031
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-95.0.4638.54" ]
+      } ],
+      "uid" : "e639a9ad30ef63977eb12890cdf17798"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

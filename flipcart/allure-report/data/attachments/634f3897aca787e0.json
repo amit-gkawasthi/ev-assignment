@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[text()=\"Oppo Mobiles under ₹10K\"]/parent::div/following-sibling::div/a\"}\n  (Session info: chrome=95.0.4638.54)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x005B3AB3+2505395]\n\tOrdinal0 [0x0054AE41+2076225]\n\tOrdinal0 [0x00452498+1057944]\n\tOrdinal0 [0x0047CB74+1231732]\n\tOrdinal0 [0x004A6D92+1404306]\n\tOrdinal0 [0x00495A2A+1333802]\n\tOrdinal0 [0x004A5168+1397096]\n\tOrdinal0 [0x004958BB+1333435]\n\tOrdinal0 [0x004723E4+1188836]\n\tOrdinal0 [0x0047323F+1192511]\n\tGetHandleVerifier [0x0073CB36+1554566]\n\tGetHandleVerifier [0x007E4A0C+2242396]\n\tGetHandleVerifier [0x00640E0B+523099]\n\tGetHandleVerifier [0x0063FEB0+519168]\n\tOrdinal0 [0x005502FD+2097917]\n\tOrdinal0 [0x00554388+2114440]\n\tOrdinal0 [0x005544C2+2114754]\n\tOrdinal0 [0x0055E041+2154561]\n\tBaseThreadInitThunk [0x7702FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x773E7A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x773E7A6E+238]\n"
+}

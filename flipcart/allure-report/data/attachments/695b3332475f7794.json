@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[text()=\"OPPO A12 (Black, 32 GB)\"]"
+}
