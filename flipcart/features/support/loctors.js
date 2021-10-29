@@ -1,17 +1,5 @@
 class locators {
     constructor() {
-        this.username = '#username';
-        this.password = '#password';
-        this.amit = '//button[contains(.,"Allow all")]';
-        // catagory
-        this.pooja = '//h3[contains(.,"Shop by department")]/following-sibling::ul/li[contains(.,"Men")]';
-        // #sub Catagory
-        this.gaurang = '//h2[contains(.,"Sale & Offers: Selected Lines")]/following-sibling::ul/li[contains(.,"Shop all Menswear Offers")]';
-        this.krishna = '//h2[contains(.,"Accessories")]/following-sibling::ul/li[contains(.,"Watches")]';
-       // #Product image by desc
-        // this.getStartedHeader = '//img[@alt="Apple Watch Series 6 GPS, 44mm Space Grey Aluminium Case with Black Sport Band - Regular"]'
-        // this.getStartedHeader = '//img[@alt="Apple Watch Series 6 GPS, 44mm Space Grey Aluminium Case with Black Sport Band - Regular"]/parent::*/..//button[contains(.,"Add to your basket")]'
-        
         this.Close ='//span[contains(.,"Login")]/ancestor::div/div/div/button';
         this.Mobiles='//div[text()="Mobiles"]';
         this.Electronics='//span[text()="Electronics"]';

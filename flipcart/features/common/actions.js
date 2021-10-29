@@ -4,24 +4,21 @@ const EC = require('wdio-wait-for');
         await browser.waitUntil(EC.visibilityOf(locator));
         await $(locator).click();
     }
-    exports.enterText = async function () {
-        return browser.url('https://www.johnlewis.com')
-        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+    exports.enterText = async function (locator, text) {
+        await browser.waitUntil(EC.visibilityOf(locator));
+        await $(locator).setValue(text);
     }
-    exports.selectOption = async function () {
-        return browser.url('https://www.johnlewis.com')
-        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+    exports.selectOption = async function (locator,attribute,value) {
+        await browser.waitUntil(EC.elementToBeEnabled(locator));
+        await $(locator).selectByAttribute(attribute, value);
+     
     }
     exports.captureScreen = async function () {
-        return browser.url('https://www.johnlewis.com')
-        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+
     }
     exports.verifyPresence = async function () {
-        return browser.url('https://www.johnlewis.com')
-        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+
     }
     exports.verifyAbsence = async function () {
-        return browser.url('https://www.johnlewis.com')
-        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+
     }
-    // export {clickElement};

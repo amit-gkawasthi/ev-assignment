@@ -9,17 +9,12 @@ Given(/^I am on the (\w+) page$/, async (page) => {
     await browser.url(`https://www.flipkart.com/`);
 
 
-    // await performAction.clickElement('//span[contains(.,"Login")]/ancestor::div/div/div/button');
-
-    // await browser.pause(250000);
-
-    await browser.waitUntil(EC.visibilityOf('//span[contains(.,"Login")]/ancestor::div/div/div/button'));
-    await $('//span[contains(.,"Login")]/ancestor::div/div/div/button').click();
-    // browser.takeScreenshot();
-    
+    await performAction.clickElement(objectRepo.Close);
     // ******************************Search starts here*********************************
-    await browser.waitUntil(EC.visibilityOf('//div[text()="Mobiles"]'));
-    await $('//div[text()="Mobiles"]').click();
+    await performAction.clickElement(objectRepo.Mobiles);
+
+    // await browser.waitUntil(EC.visibilityOf('//div[text()="Mobiles"]'));
+    // await $('//div[text()="Mobiles"]').click();
     // browser.takeScreenshot();
     await browser.waitUntil(EC.visibilityOf('//span[text()="Electronics"]'));
     await $('//span[text()="Electronics"]').click();
