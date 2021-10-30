@@ -1,38 +1,41 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
+//Locators
+var PropertiesReader = require('properties-reader');
+var locators = PropertiesReader('C:/Projects/evolent/flipcart/features/support/locator.properties');
+//Generic actions
 var performAction = require('../common/actions.js');
-const Locators = require('../support/loctors.js');
-let objectRepo = new Locators();
+//Configurations
 const Configuration = require('../support/config.js');
 let config = new Configuration();
-
+//Expected Conditions wait
 const EC = require('wdio-wait-for');
 
 
-Given(/^I am on the (\w+) page$/, async (page) => {
+Given(/^Evolent end to end test case$/, async () => {
     await browser.url(config.url);
     await browser.maximizeWindow();
     //Close Login layover popup
-    await performAction.clickElement(objectRepo.Close);
+    await performAction.clickElement(locators.get("Close"));
     // Search for phone starts here
-    await performAction.clickElement(objectRepo.Mobiles);
-    await performAction.clickElement(objectRepo.Electronics);
-    await performAction.clickElement(objectRepo.MobileCompany);
-    await performAction.clickElement(objectRepo.PhonePriceRange);
+    await performAction.clickElement(locators.get("Mobiles"));
+    await performAction.clickElement(locators.get("Electronics"));
+    await performAction.clickElement(locators.get("MobileCompany"));
+    await performAction.clickElement(locators.get("PhonePriceRange"));
     // Product selection (cart population) starts here
-    await performAction.clickElement(objectRepo.PhoneModel);
+    await performAction.clickElement(locators.get("PhoneModel"));
     var parentWindow = await browser.getWindowHandle()
     var handles = await browser.getWindowHandles()
     for(var i = 0; i< handles.length; i++){
         if( handles[i]!= parentWindow){
             await browser.switchToWindow(handles[i]);
-            await browser.waitUntil(EC.visibilityOf(objectRepo.productLabel));
+            await browser.waitUntil(EC.visibilityOf(locators.get("productLabel")));
 
-            await browser.waitUntil(EC.visibilityOf(objectRepo.AddToCart));
-            if(!await $(objectRepo.AddToCart).isEnabled()){
+            await browser.waitUntil(EC.visibilityOf(locators.get("AddToCart")));
+            if(!await $(locators.get("AddToCart")).isEnabled()){
                 console.log("Button is not enabled hence can't perform shopping");
                 await browser.saveScreenshot('./screenshots/screenshot.png');
             }else{
-                await $(objectRepo.AddToCart).click();
+                await $(locators.get("AddToCart")).click();
                 await browser.waitUntil(EC.visibilityOf('//div[contains(text(),"My Cart")]'));
                 await browser.saveScreenshot('./screenshots/screenshot.png');
                 break;
@@ -42,46 +45,62 @@ Given(/^I am on the (\w+) page$/, async (page) => {
     }
     
     //Click on Flipcart home
-    await performAction.clickElement(objectRepo.Home);
+    await performAction.clickElement(locators.get("Home"));
     //Closed login layover popup
-    await performAction.clickElement(objectRepo.Close);
+    await performAction.clickElement(locators.get("Close"));
     //Click populated cart
-    await performAction.clickElement(objectRepo.Cart);
+    await performAction.clickElement(locators.get("Cart"));
     // Put assert here to verify added product
-    await browser.waitUntil(EC.visibilityOf(objectRepo.PhoneModelInCart));
+    await browser.waitUntil(EC.visibilityOf(locators.get("PhoneModelInCart")));
     //Click place order
-    await performAction.clickElement(objectRepo.PlaceOrder);
+    await performAction.clickElement(locators.get("PlaceOrder"));
     //Enter email address
-    await performAction.enterText(objectRepo.EnterEmail, "amitkumarkawasthi@gmail.com");
+    await performAction.enterText(locators.get("EnterEmail"), "amitkumarkawasthi@gmail.com");
     //Click continue
-    await performAction.clickElement(objectRepo.Continue);
+    await performAction.clickElement(locators.get("Continue"));
     //Enter mobile number
-    await performAction.enterText(objectRepo.EnterMobile, "8411884758");
+    await performAction.enterText(locators.get("EnterMobile"), "8411884758");
     //Click continue
-    await performAction.clickElement(objectRepo.Continue);
+    await performAction.clickElement(locators.get("Continue"));
     //Enter password
-    await performAction.enterText(objectRepo.EnterPassword, "Gaurang@108");
+    await performAction.enterText(locators.get("EnterPassword"), "Gaurang@108");
     //Click Login
-    await performAction.clickElement(objectRepo.Login);
+    await performAction.clickElement(locators.get("Login"));
     //Click continue
-    await performAction.clickElement(objectRepo.Continue);
+    await performAction.clickElement(locators.get("Continue"));
     //Click payment option
-    await performAction.clickElement(objectRepo.PaymentOptions);
+    await performAction.clickElement(locators.get("PaymentOptions"));
     //Click Net Banking
-    await performAction.clickElement(objectRepo.NetBanking);
-    await performAction.selectOption(objectRepo.BanksDropDown,"value","CORPORATION");
-    await browser.saveScreenshot('./screenshots/screenshot.png');
-    await browser.pause(250000);
+    await performAction.clickElement(locators.get("NetBanking"));
+    //Select corporation bank
+    await performAction.selectOption(locators.get("BanksDropDown"),"value","CORPORATION");
+    //Capture screenshot
+    await performAction.captureScreen("LastScreen");
+
 });
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    await $('#username').setValue(username);
-    await $('#password').setValue(password);
-    await $('button[type="submit"]').click();
+Given(/^user is on home page$/, async () => {
+    await browser.url(config.url);
+    await browser.maximizeWindow();
 });
 
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
-    await expect($('#flash')).toBeExisting();
-    await expect($('#flash')).toHaveTextContaining(message);
+When(/^user click element "(\w+)"$/, async (locator) => {
+    await performAction.clickElement(locators.get(locator));
 });
 
+When(/^user enter text  "(\w+)" in field "(\w+)"$/, async (text, locator) => {
+    await performAction.enterText(locators.get(locator), text);
+});
+
+When(/^user select option  "(\w+)" from field "(\w+)"$/, async (option, locator) => {
+    await performAction.selectOption(locators.get(locator),"value",option);
+});
+
+Then(/^I should see a "(\w+)" message in field "(\w+)"$/, async (message, locator) => {
+    await expect($(locators.get(locator))).toBeExisting();
+    await expect($(locators.get(locator))).toHaveTextContaining(message);
+});
+
+Then(/^user capture screenshot with name "(\w+)"$/, async (name) => {
+    await performAction.captureScreen(name);
+});

@@ -17,6 +17,7 @@
         "wdio-wait-for": "^2.2.1"
     },
     "dependencies": {
-        "allure-commandline": "^2.13.8"
+        "allure-commandline": "^2.13.8",
+        "properties-reader": "^2.2.0"
     }
 }

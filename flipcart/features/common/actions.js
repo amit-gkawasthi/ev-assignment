@@ -13,7 +13,8 @@ const EC = require('wdio-wait-for');
         await $(locator).selectByAttribute(attribute, value);
      
     }
-    exports.captureScreen = async function () {
+    exports.captureScreen = async function (name) {
+        await browser.saveScreenshot('./screenshots/'+name+'.png');
 
     }
     exports.verifyPresence = async function () {

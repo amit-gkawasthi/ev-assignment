@@ -1,6 +1,7 @@
-Feature: The Internet Guinea Pig Website
+Feature: Interview assignment
 
-  Scenario: As a user, I can log into the secure area
+  Scenario: As a user, I want to place an order for a OPPO phone
 
-    Given I am on the login page
+    Given Evolent end to end test case
+
 
