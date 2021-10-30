@@ -1,0 +1,56 @@
+{
+  "uid" : "5954b1041d7b0a",
+  "name" : "",
+  "fullName" : "Interview assignment: As a user, I want to place an order for a OPPO phone.",
+  "historyId" : "fd62186bb46346dbb17a17783ea2aed9",
+  "time" : {
+    "start" : 1635562627748,
+    "stop" : 1635562627758,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "testClass",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.54"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5954b1041d7b0a.json",
+  "parameterValues" : [ "chrome-95.0.4638.54" ]
+}

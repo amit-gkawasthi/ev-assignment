@@ -1,0 +1,64 @@
+{
+  "uid" : "461d4fee828f2bee",
+  "name" : "Given Evolent end to end test case",
+  "fullName" : "Interview assignment: As a user, I want to place an order for a OPPO phone.Given Evolent end to end test case",
+  "historyId" : "cfea60af7a67ddb44e5fa00fc1f14e9",
+  "time" : {
+    "start" : 1635562627759,
+    "stop" : 1635562627777,
+    "duration" : 18
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Error: Parameter for \"url\" command needs to be type of string",
+  "statusTrace" : "Error: Parameter for \"url\" command needs to be type of string\n                    at Browser.url (C:\\Projects\\evolent\\flipcart\\node_modules\\webdriverio\\build\\commands\\browser\\url.js:42:15)\n                    at Browser.wrapCommandFn (C:\\Projects\\evolent\\flipcart\\node_modules\\@wdio\\utils\\build\\shim.js:131:38)\n                    at async World.<anonymous> (C:\\Projects\\evolent\\flipcart\\features\\step-definitions\\steps.js:68:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "testClass",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given Evolent end to end test case"
+  }, {
+    "name" : "package",
+    "value" : "Interview assignment: As a user, I want to place an order for a OPPO phone"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.54"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "461d4fee828f2bee.json",
+  "parameterValues" : [ "chrome-95.0.4638.54" ]
+}

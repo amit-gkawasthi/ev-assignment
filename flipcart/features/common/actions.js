@@ -23,3 +23,14 @@ const EC = require('wdio-wait-for');
     exports.verifyAbsence = async function () {
 
     }
+
+    exports.switchToChildWindow = async function(){
+        var parentWindow =  await browser.getWindowHandle()
+        var handles =  await browser.getWindowHandles()
+        for(var i = 0; i< handles.length; i++){
+            if( handles[i]!= parentWindow){
+                 await browser.switchToWindow(handles[i]);
+                break;
+            }
+        }
+    }

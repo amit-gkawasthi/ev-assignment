@@ -1,8 +1,8 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
-    "uid" : "fdbdc9ea7ee956858561e08f47b3a285",
-    "name" : "The Internet Guinea Pig Website: As a user, I can log into the secure area",
+    "uid" : "9492e7fc6c506687d9cc547e95fdd72a",
+    "name" : "Interview assignment: As a user, I want to place an order for a OPPO phone",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -10,6 +10,17 @@
       "passed" : 1,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+    "name" : "Interview assignment: As a user, I want to purchase a OPPO phone",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 21,
+      "unknown" : 0,
+      "total" : 21
     }
   } ]
 }

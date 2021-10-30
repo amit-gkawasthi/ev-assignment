@@ -1,20 +1,230 @@
 [ {
-  "uid" : "93a28fa55fd65251",
-  "name" : "Given I am on the login page",
+  "uid" : "c46e1a651cd2e696",
+  "name" : "And user click element \"PaymentOptions\"",
   "time" : {
-    "start" : 1635545294227,
-    "stop" : 1635545354258,
-    "duration" : 60031
+    "start" : 1635562649522,
+    "stop" : 1635562650031,
+    "duration" : 509
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87c902d229d311d5",
+  "name" : "And user click element \"PhonePriceRange\"",
+  "time" : {
+    "start" : 1635562633293,
+    "stop" : 1635562633995,
+    "duration" : 702
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fbbd6c6f69c8fbc",
+  "name" : "And user click element \"PhoneModel\"",
+  "time" : {
+    "start" : 1635562633996,
+    "stop" : 1635562635036,
+    "duration" : 1040
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b352d3c79b0b4cc6",
+  "name" : "And User verify element on screen \"MyCart\"",
+  "time" : {
+    "start" : 1635562637936,
+    "stop" : 1635562638870,
+    "duration" : 934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2b220f3455e7e04",
+  "name" : "And user click element \"Mobiles\"",
+  "time" : {
+    "start" : 1635562630759,
+    "stop" : 1635562631740,
+    "duration" : 981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2193ab710d8b3bf",
+  "name" : "",
+  "time" : {
+    "start" : 1635562652752,
+    "stop" : 1635562652753,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c30ec07c69ddc49",
+  "name" : "And user click element \"Cart\"",
+  "time" : {
+    "start" : 1635562640209,
+    "stop" : 1635562641299,
+    "duration" : 1090
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce326ec5cb5d56",
+  "name" : "And user capture screenshot with name \"paymentScreen\"",
+  "time" : {
+    "start" : 1635562652166,
+    "stop" : 1635562652752,
+    "duration" : 586
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "499817b7e2e1470",
+  "name" : "And user click element \"Home\"",
+  "time" : {
+    "start" : 1635562638870,
+    "stop" : 1635562639533,
+    "duration" : 663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "461d4fee828f2bee",
+  "name" : "Given Evolent end to end test case",
+  "time" : {
+    "start" : 1635562627759,
+    "stop" : 1635562627777,
+    "duration" : 18
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "2e4791b7be3894fa",
+  "uid" : "5708ba020f33e894",
+  "name" : "And user click element \"Continue\"",
+  "time" : {
+    "start" : 1635562647837,
+    "stop" : 1635562649522,
+    "duration" : 1685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acde3c79bea524b2",
+  "name" : "And user click element \"NetBanking\"",
+  "time" : {
+    "start" : 1635562650031,
+    "stop" : 1635562651723,
+    "duration" : 1692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad63d2257070355f",
+  "name" : "And user select option  \"CORPORATION\" from field \"BanksDropDown\"",
+  "time" : {
+    "start" : 1635562651724,
+    "stop" : 1635562652166,
+    "duration" : 442
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a41f66f2d38ce2c6",
   "name" : "",
   "time" : {
-    "start" : 1635545354259,
-    "stop" : 1635545354260,
+    "start" : 1635562627777,
+    "stop" : 1635562627778,
     "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d524880894f201cb",
+  "name" : "And user click element \"MobileCompany\"",
+  "time" : {
+    "start" : 1635562632271,
+    "stop" : 1635562633293,
+    "duration" : 1022
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "feb38c9bb20b5460",
+  "name" : "And user click element \"PlaceOrder\"",
+  "time" : {
+    "start" : 1635562642047,
+    "stop" : 1635562645827,
+    "duration" : 3780
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79465fd3d1f19d94",
+  "name" : "And User verify element on screen \"PhoneModelInCart\"",
+  "time" : {
+    "start" : 1635562641299,
+    "stop" : 1635562642046,
+    "duration" : 747
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43b8c0a60d7dc5fb",
+  "name" : "And user click element \"AddToCart\"",
+  "time" : {
+    "start" : 1635562635429,
+    "stop" : 1635562637936,
+    "duration" : 2507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6fe494655e55559",
+  "name" : "And user login to his account",
+  "time" : {
+    "start" : 1635562645827,
+    "stop" : 1635562647837,
+    "duration" : 2010
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd908e8727ccb70f",
+  "name" : "And user click element \"Close\"",
+  "time" : {
+    "start" : 1635562639533,
+    "stop" : 1635562640209,
+    "duration" : 676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "255d7931014b283d",
+  "name" : "And user click element \"Electronics\"",
+  "time" : {
+    "start" : 1635562631740,
+    "stop" : 1635562632271,
+    "duration" : 531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a924c02e1159f35b",
+  "name" : "And user switch to child window",
+  "time" : {
+    "start" : 1635562635036,
+    "stop" : 1635562635429,
+    "duration" : 393
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45cc4817bccf3522",
+  "name" : "Given user is on \"flipcart\" page",
+  "time" : {
+    "start" : 1635562627813,
+    "stop" : 1635562629720,
+    "duration" : 1907
   },
   "status" : "passed",
   "severity" : "normal"

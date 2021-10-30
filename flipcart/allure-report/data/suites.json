@@ -2,34 +2,311 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "The Internet Guinea Pig Website: As a user, I can log into the secure area",
+    "name" : "Interview assignment: As a user, I want to place an order for a OPPO phone",
     "children" : [ {
-      "name" : "Given I am on the login page",
-      "uid" : "93a28fa55fd65251",
-      "parentUid" : "fdbdc9ea7ee956858561e08f47b3a285",
+      "name" : "Given Evolent end to end test case",
+      "uid" : "461d4fee828f2bee",
+      "parentUid" : "9492e7fc6c506687d9cc547e95fdd72a",
       "status" : "broken",
       "time" : {
-        "start" : 1635545294227,
-        "stop" : 1635545354258,
-        "duration" : 60031
+        "start" : 1635562627759,
+        "stop" : 1635562627777,
+        "duration" : 18
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-95.0.4638.54" ]
     }, {
       "name" : "",
-      "uid" : "2e4791b7be3894fa",
-      "parentUid" : "fdbdc9ea7ee956858561e08f47b3a285",
+      "uid" : "a41f66f2d38ce2c6",
+      "parentUid" : "9492e7fc6c506687d9cc547e95fdd72a",
       "status" : "passed",
       "time" : {
-        "start" : 1635545354259,
-        "stop" : 1635545354260,
+        "start" : 1635562627777,
+        "stop" : 1635562627778,
         "duration" : 1
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome-95.0.4638.54" ]
     } ],
-    "uid" : "fdbdc9ea7ee956858561e08f47b3a285"
+    "uid" : "9492e7fc6c506687d9cc547e95fdd72a"
+  }, {
+    "name" : "Interview assignment: As a user, I want to purchase a OPPO phone",
+    "children" : [ {
+      "name" : "Given user is on \"flipcart\" page",
+      "uid" : "45cc4817bccf3522",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562627813,
+        "stop" : 1635562629720,
+        "duration" : 1907
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Mobiles\"",
+      "uid" : "f2b220f3455e7e04",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562630759,
+        "stop" : 1635562631740,
+        "duration" : 981
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Electronics\"",
+      "uid" : "255d7931014b283d",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562631740,
+        "stop" : 1635562632271,
+        "duration" : 531
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"MobileCompany\"",
+      "uid" : "d524880894f201cb",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562632271,
+        "stop" : 1635562633293,
+        "duration" : 1022
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"PhonePriceRange\"",
+      "uid" : "87c902d229d311d5",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562633293,
+        "stop" : 1635562633995,
+        "duration" : 702
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"PhoneModel\"",
+      "uid" : "3fbbd6c6f69c8fbc",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562633996,
+        "stop" : 1635562635036,
+        "duration" : 1040
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user switch to child window",
+      "uid" : "a924c02e1159f35b",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562635036,
+        "stop" : 1635562635429,
+        "duration" : 393
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"AddToCart\"",
+      "uid" : "43b8c0a60d7dc5fb",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562635429,
+        "stop" : 1635562637936,
+        "duration" : 2507
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And User verify element on screen \"MyCart\"",
+      "uid" : "b352d3c79b0b4cc6",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562637936,
+        "stop" : 1635562638870,
+        "duration" : 934
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Home\"",
+      "uid" : "499817b7e2e1470",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562638870,
+        "stop" : 1635562639533,
+        "duration" : 663
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Close\"",
+      "uid" : "cd908e8727ccb70f",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562639533,
+        "stop" : 1635562640209,
+        "duration" : 676
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Cart\"",
+      "uid" : "c30ec07c69ddc49",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562640209,
+        "stop" : 1635562641299,
+        "duration" : 1090
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And User verify element on screen \"PhoneModelInCart\"",
+      "uid" : "79465fd3d1f19d94",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562641299,
+        "stop" : 1635562642046,
+        "duration" : 747
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"PlaceOrder\"",
+      "uid" : "feb38c9bb20b5460",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562642047,
+        "stop" : 1635562645827,
+        "duration" : 3780
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user login to his account",
+      "uid" : "a6fe494655e55559",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562645827,
+        "stop" : 1635562647837,
+        "duration" : 2010
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"Continue\"",
+      "uid" : "5708ba020f33e894",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562647837,
+        "stop" : 1635562649522,
+        "duration" : 1685
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"PaymentOptions\"",
+      "uid" : "c46e1a651cd2e696",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562649522,
+        "stop" : 1635562650031,
+        "duration" : 509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user click element \"NetBanking\"",
+      "uid" : "acde3c79bea524b2",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562650031,
+        "stop" : 1635562651723,
+        "duration" : 1692
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user select option  \"CORPORATION\" from field \"BanksDropDown\"",
+      "uid" : "ad63d2257070355f",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562651724,
+        "stop" : 1635562652166,
+        "duration" : 442
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "And user capture screenshot with name \"paymentScreen\"",
+      "uid" : "ce326ec5cb5d56",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562652166,
+        "stop" : 1635562652752,
+        "duration" : 586
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    }, {
+      "name" : "",
+      "uid" : "c2193ab710d8b3bf",
+      "parentUid" : "a0022fbb3d412cd63b43bc817d8efbf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635562652752,
+        "stop" : 1635562652753,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.54" ]
+    } ],
+    "uid" : "a0022fbb3d412cd63b43bc817d8efbf4"
   } ]
 }

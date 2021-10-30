@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//h2[text()=\"Oppo Mobiles under ₹10K\"]/parent::div/following-sibling::div/a"
+}

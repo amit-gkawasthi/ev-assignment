@@ -1,18 +1,71 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
+//config properties
+var ConfigReader = require('properties-reader');
+var config = ConfigReader('C:/Projects/evolent/flipcart/features/support/config.properties');
+
 //Locators
 var PropertiesReader = require('properties-reader');
 var locators = PropertiesReader('C:/Projects/evolent/flipcart/features/support/locator.properties');
+
 //Generic actions
 var performAction = require('../common/actions.js');
-//Configurations
-const Configuration = require('../support/config.js');
-let config = new Configuration();
+
 //Expected Conditions wait
 const EC = require('wdio-wait-for');
 
 
+Given(/^user is on "(\w+)" page$/, async (page) => {
+    await browser.url(config.get(page));
+    await browser.maximizeWindow();
+});
+
+When(/^user click element "(\w+)"$/, async (locator) => {
+    await performAction.clickElement(locators.get(locator));
+});
+
+
+When(/^user enter text "(\w@+)" in field "(\w+)"$/, async (text, locator) => {
+    await performAction.enterText(locators.get(locator), text);
+});
+
+When(/^user select option  "(\w+)" from field "(\w+)"$/, async (option, locator) => {
+    await performAction.selectOption(locators.get(locator),"value",option);
+});
+
+Then(/^I should see a "(\w+)" message in field "(\w+)"$/, async (message, locator) => {
+    await expect($(locators.get(locator))).toBeExisting();
+    await expect($(locators.get(locator))).toHaveTextContaining(message);
+});
+
+Then(/^User verify element on screen "(\w+)"$/, async (locator) => {
+    await expect($(locators.get(locator))).toBeDisplayed();
+});
+
+Then(/^user capture screenshot with name "(\w+)"$/, async (name) => {
+    await performAction.captureScreen(name);
+});
+
+Then(/^user switch to child window$/, async () => {
+    await performAction.switchToChildWindow();
+});
+
+Then(/^user login to his account$/, async () =>{
+       //Enter email address
+       await performAction.enterText(locators.get("EnterEmail"), "amitkumarkawasthi@gmail.com");
+       //Click continue
+       await performAction.clickElement(locators.get("Continue"));
+       //Enter mobile number
+       await performAction.enterText(locators.get("EnterMobile"), "8411884758");
+       //Click continue
+       await performAction.clickElement(locators.get("Continue"));
+       //Enter password
+       await performAction.enterText(locators.get("EnterPassword"), "Gaurang@108");
+       //Click Login
+       await performAction.clickElement(locators.get("Login"));
+});
+
 Given(/^Evolent end to end test case$/, async () => {
-    await browser.url(config.url);
+    await browser.url(config.get("url"));
     await browser.maximizeWindow();
     //Close Login layover popup
     await performAction.clickElement(locators.get("Close"));
@@ -36,7 +89,7 @@ Given(/^Evolent end to end test case$/, async () => {
                 await browser.saveScreenshot('./screenshots/screenshot.png');
             }else{
                 await $(locators.get("AddToCart")).click();
-                await browser.waitUntil(EC.visibilityOf('//div[contains(text(),"My Cart")]'));
+                await browser.waitUntil(EC.visibilityOf(locators.get("myCart")));
                 await browser.saveScreenshot('./screenshots/screenshot.png');
                 break;
             }
@@ -77,30 +130,4 @@ Given(/^Evolent end to end test case$/, async () => {
     //Capture screenshot
     await performAction.captureScreen("LastScreen");
 
-});
-
-Given(/^user is on home page$/, async () => {
-    await browser.url(config.url);
-    await browser.maximizeWindow();
-});
-
-When(/^user click element "(\w+)"$/, async (locator) => {
-    await performAction.clickElement(locators.get(locator));
-});
-
-When(/^user enter text  "(\w+)" in field "(\w+)"$/, async (text, locator) => {
-    await performAction.enterText(locators.get(locator), text);
-});
-
-When(/^user select option  "(\w+)" from field "(\w+)"$/, async (option, locator) => {
-    await performAction.selectOption(locators.get(locator),"value",option);
-});
-
-Then(/^I should see a "(\w+)" message in field "(\w+)"$/, async (message, locator) => {
-    await expect($(locators.get(locator))).toBeExisting();
-    await expect($(locators.get(locator))).toHaveTextContaining(message);
-});
-
-Then(/^user capture screenshot with name "(\w+)"$/, async (name) => {
-    await performAction.captureScreen(name);
 });

@@ -1,0 +1,185 @@
+{
+  "uid" : "f2b220f3455e7e04",
+  "name" : "And user click element \"Mobiles\"",
+  "fullName" : "Interview assignment: As a user, I want to purchase a OPPO phone.And user click element \"Mobiles\"",
+  "historyId" : "af226013a05789c017d2be8e2e9d3505",
+  "time" : {
+    "start" : 1635562630759,
+    "stop" : 1635562631740,
+    "duration" : 981
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1635562630761,
+        "stop" : 1635562631520,
+        "duration" : 759
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1bd7dcddf972f4",
+        "name" : "Request",
+        "source" : "1bd7dcddf972f4.json",
+        "type" : "application/json",
+        "size" : 62
+      }, {
+        "uid" : "7730a8265330e443",
+        "name" : "Screenshot",
+        "source" : "7730a8265330e443.png",
+        "type" : "image/png",
+        "size" : 1275271
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1635562631538,
+        "stop" : 1635562631560,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3f28744fdb2dcc21",
+        "name" : "Request",
+        "source" : "3f28744fdb2dcc21.json",
+        "type" : "application/json",
+        "size" : 8337
+      }, {
+        "uid" : "94700826544f250d",
+        "name" : "Response",
+        "source" : "94700826544f250d.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1635562631561,
+        "stop" : 1635562631590,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "96085d4d949f214c",
+        "name" : "Request",
+        "source" : "96085d4d949f214c.json",
+        "type" : "application/json",
+        "size" : 62
+      }, {
+        "uid" : "4633ee95f97edc08",
+        "name" : "Response",
+        "source" : "4633ee95f97edc08.json",
+        "type" : "application/json",
+        "size" : 83
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element/41e689fc-84ef-4189-bb1c-91b8a4afedd2/click",
+      "time" : {
+        "start" : 1635562631595,
+        "stop" : 1635562631735,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /session/:sessionId/screenshot",
+      "time" : {
+        "start" : 1635562631735,
+        "stop" : 0,
+        "duration" : -1635562631735
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "85084578378b2785",
+      "name" : "Response",
+      "source" : "85084578378b2785.json",
+      "type" : "application/json",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Interview assignment: As a user, I want to purchase a OPPO phone"
+  }, {
+    "name" : "testClass",
+    "value" : "Interview assignment: As a user, I want to purchase a OPPO phone"
+  }, {
+    "name" : "testMethod",
+    "value" : "And user click element \"Mobiles\""
+  }, {
+    "name" : "package",
+    "value" : "Interview assignment: As a user, I want to purchase a OPPO phone"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.54"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f2b220f3455e7e04.json",
+  "parameterValues" : [ "chrome-95.0.4638.54" ]
+}

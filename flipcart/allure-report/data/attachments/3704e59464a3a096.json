@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//label[contains(.,\"Enter Password\")]/parent::div/input"
+}

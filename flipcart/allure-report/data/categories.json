@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "Error: function timed out, ensure the promise resolves within 60000 milliseconds",
+      "name" : "Error: Parameter for \"url\" command needs to be type of string",
       "children" : [ {
-        "name" : "Given I am on the login page",
-        "uid" : "93a28fa55fd65251",
-        "parentUid" : "e639a9ad30ef63977eb12890cdf17798",
+        "name" : "Given Evolent end to end test case",
+        "uid" : "461d4fee828f2bee",
+        "parentUid" : "a2d1944606ae3b1a70890ba9dda61633",
         "status" : "broken",
         "time" : {
-          "start" : 1635545294227,
-          "stop" : 1635545354258,
-          "duration" : 60031
+          "start" : 1635562627759,
+          "stop" : 1635562627777,
+          "duration" : 18
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "chrome-95.0.4638.54" ]
       } ],
-      "uid" : "e639a9ad30ef63977eb12890cdf17798"
+      "uid" : "a2d1944606ae3b1a70890ba9dda61633"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
